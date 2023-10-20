@@ -1,0 +1,6 @@
+worker = input()
+wage = float(input())
+month_sales = float(input())
+bonus = month_sales * 0.15
+final_wage = wage + bonus
+print(f'TOTAL = R$ {final_wage:.2f}')
