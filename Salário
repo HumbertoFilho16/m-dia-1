@@ -1,0 +1,6 @@
+worker = int(input())
+worked_hours = int(input())
+wage_per_hour = float(input())
+final_wage = worked_hours * wage_per_hour
+print(f'NUMBER = {worker}')
+print(f'SALARY = U$ {final_wage:.2f}')
