@@ -1,0 +1,22 @@
+Y = int(input())
+X = Y
+cem = X // 100
+X = X % 100
+cinquenta = X // 50
+X = X % 50
+vinte = X // 20
+X = X % 20
+dez = X // 10
+X = X % 10
+cinco = X // 5
+X = X % 5
+dois = X // 2
+X = X % 2
+print(Y)
+print(f'{cem} nota(s) de R$ 100,00')
+print(f'{cinquenta} nota(s) de R$ 50,00')
+print(f'{vinte} nota(s) de R$ 20,00')
+print(f'{dez} nota(s) de R$ 10,00')
+print(f'{cinco} nota(s) de R$ 5,00')
+print(f'{dois} nota(s) de R$ 2,00')
+print(f'{X} nota(s) de R$ 1,00')
