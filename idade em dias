@@ -1,0 +1,8 @@
+X = int(input())
+ano = X // 365
+X = X % 365
+mes = X // 30
+X = X % 30
+print(f'{ano} ano(s)')
+print(f'{mes} mes(es)')
+print(f'{X} dia(s)')
