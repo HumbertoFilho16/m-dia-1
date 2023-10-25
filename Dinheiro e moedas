@@ -1,0 +1,39 @@
+X= float(input())
+X = int(X * 100)
+cem = X // 10000
+X = X % 10000
+cinquenta = X // 5000
+X = X % 5000
+vinte = X // 2000
+X = X % 2000
+dez = X // 1000
+X = X % 1000
+cinco =  X // 500
+X = X % 500
+dois = X // 200
+X = X % 200
+um = X // 100
+X = X % 100
+cent50 = X // 50
+X = X % 50
+cent25 = X // 25
+X = X % 25
+cent10 = X // 10
+X = X % 10
+cent5 = X // 5
+X = X % 5
+X = X // 1
+print('NOTAS:')
+print(f'{cem} nota(s) de R$ 100.00')
+print(f'{cinquenta} nota(s) de R$ 50.00')
+print(f'{vinte} nota(s) de R$ 20.00')
+print(f'{dez} nota(s) de R$ 10.00')
+print(f'{cinco} nota(s) de R$ 5.00')
+print(f'{dois} nota(s) de R$ 2.00')
+print('MOEDAS:')
+print(f'{um} moeda(s) de R$ 1.00')
+print(f'{cent50} moeda(s) de R$ 0.50')
+print(f'{cent25} moeda(s) de R$ 0.25')
+print(f'{cent10} moeda(s) de R$ 0.10')
+print(f'{cent5} moeda(s) de R$ 0.05')
+print(f'{X} moeda(s) de R$ 0.01')
