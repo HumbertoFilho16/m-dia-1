@@ -1,19 +1,19 @@
 import sys
 
-A, B, C, = input().split()
+A, B, C, = input().split() # recebe os valores da equação
 A = float(A)
 B = float(B)
 C = float(C)
-delta = B ** 2 - 4 * A * C
-if delta <= 0:
+delta = B ** 2 - 4 * A * C # calcula o delta da equação
+if delta <= 0: # Se o delta for menor ou igual a zero, o código para
     print('Impossivel calcular')
     sys.exit()
-raiz_delta1 = -B + delta ** 0.5
-raiz_delta2 = -B - delta ** 0.5
+raiz_delta1 = -B + (delta ** 0.5)
+raiz_delta2 = -B - (delta ** 0.5) # fiz as equações separadas para quando o resultado da primeira parte for 0, ele pare o código e não cause um erro
 if raiz_delta1 == 0 or raiz_delta2 == 0:
-    print("impossivel calcular")
+    print('Impossivel calcular')
     sys.exit()
-x1 = (-B + raiz_delta1) / (2 * A)
-x2 = (-B - raiz_delta2) / (2 * A)
+x1 = raiz_delta1 / (2 * A)
+x2 = raiz_delta2 / (2 * A) # calcula os 2 x
 print(f'R1 = {x1:.5f}')
-print(f'R2 = {x2:.5f}')
+print(f'R2 = {x2:.5f}') # mostra os 2 x com apenas 5 casas decimais depois da virgula
