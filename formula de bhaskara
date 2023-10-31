@@ -1,0 +1,19 @@
+import sys
+
+A, B, C, = input().split()
+A = float(A)
+B = float(B)
+C = float(C)
+delta = B ** 2 - 4 * A * C
+if delta <= 0:
+    print('Impossivel calcular')
+    sys.exit()
+raiz_delta1 = -B + delta ** 0.5
+raiz_delta2 = -B - delta ** 0.5
+if raiz_delta1 == 0 or raiz_delta2 == 0:
+    print("impossivel calcular")
+    sys.exit()
+x1 = (-B + raiz_delta1) / (2 * A)
+x2 = (-B - raiz_delta2) / (2 * A)
+print(f'R1 = {x1:.5f}')
+print(f'R2 = {x2:.5f}')
