@@ -1,0 +1,15 @@
+x, y = input().split()    # 'x' recebe o código do produto, 'y' recebe a quantidade de produtos
+x = int(x)
+y = int(y)
+if x == 1:    # eu não sei usar listas ainda, então usei o if para armazenar os valores
+    preço = 4.00
+elif x == 2:
+    preço = 4.50
+elif x == 3:
+    preço = 5.00
+elif x == 4:
+    preço = 2.00
+else:
+    preço = 1.50
+total = preço * y    # calcula o total da compra
+print(f'Total: R$ {total:.2f}')    # mostra o total da compra
