@@ -1,0 +1,29 @@
+x, y, z = input().split()
+x = int(x)
+y = int(y)
+z = int(z)
+if x > y and x > z:
+    print(f'{x}')
+    if  y > z:
+        print(f'{y}')
+        print(f'{z}')
+    else:
+        print(f'{z}')
+        print(f'{y}')
+elif y > x and y > z:
+    print(f'{y}')
+    if  x > z:
+        print(f'{x}')
+        print(f'{z}')
+    else:
+        print(f'{z}')
+        print(f'{x}')
+else:
+    print(f'{z}')
+    if  y > x:
+        print(f'{y}')
+        print(f'{x}')
+    else:
+        print(f'{x}')
+        print(f'{y}')
+print(f'\n{x}\n{y}\n{z}')
