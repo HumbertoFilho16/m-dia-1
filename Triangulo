@@ -1,0 +1,19 @@
+a, b, c = input().split()
+a = float(a)
+b = float(b)
+c = float(c)
+tri = False
+result = 0
+if a > b and a > c:
+    tri = (b + c > a)
+elif b > a and b > c:
+    tri = (a + c > b)
+else:
+    tri = (a + b > c)
+
+if tri == True:
+    result = a + b + c
+    print(f'Perimetro = {result:.1f}')
+else:
+    result = ((a + b) * c) / 2
+    print(f'Area = {result:.1f}')
