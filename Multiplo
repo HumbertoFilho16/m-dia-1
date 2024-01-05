@@ -1,0 +1,15 @@
+a, b = input().split()
+a = int(a)
+b = int(b)
+if a > b:
+    mult = (a % b == 0)
+    if mult == False:
+        print('Nao sao Multiplos')
+    else:
+        print('Sao Multiplos')
+elif a < b:
+    mult = (b % a == 0)
+    if mult == False:
+        print('Nao sao Multiplos')
+    else:
+        print('Sao Multiplos')
